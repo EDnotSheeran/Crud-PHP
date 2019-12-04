@@ -9,10 +9,10 @@
             "<div style='display:flex'>
                 <form action='delete.php?delete=".$id."' method='get'>
                     <input style='display:none' type='text' name='delete' value='".$id."'>
-                    <button>x</button>
+                    <button><img src='delete.png' width='20px'></button>
                 </form>
                 <p id='".$text."'>".$text."</p>
-                <button class='btneditar' onclick=\"editar('update-".$id."')\">#</button>
+                <button class='btneditar' onclick=\"editar('update-".$id."')\"><img class='editarPNG' src='edit.png' width='20px'></button>
             </div>
             <form id='update-".$id."' class='update hide' action='update.php?updateid=".$id."' method='get'>
                 <input style='display:none' type='text' name='update' value='".$id."'>

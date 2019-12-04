@@ -107,3 +107,6 @@ aside button{
 .hide{
     display: none;
 }
+.editarPNG{
+    filter: invert(79%);
+}
