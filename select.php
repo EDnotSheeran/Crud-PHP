@@ -6,10 +6,18 @@
         $text = $linha["coluna"];
         $id = $linha["id"];
         echo(
-            "<form action='delete.php?delete=".$id."' method='get'>
-                <input style='display:none' type='text' name='delete' value='".$id."'>
-                <button>x</button>
-                <p id'".$text."'>".$text."</p>".
-            "</form>"
+            "<div style='display:flex'>
+                <form action='delete.php?delete=".$id."' method='get'>
+                    <input style='display:none' type='text' name='delete' value='".$id."'>
+                    <button>x</button>
+                </form>
+                <p id='".$text."'>".$text."</p>
+                <button class='btneditar' onclick=\"editar('update-".$id."')\">#</button>
+            </div>
+            <form id='update-".$id."' class='update hide' action='update.php?updateid=".$id."' method='get'>
+                <input style='display:none' type='text' name='update' value='".$id."'>
+                <input type='text' name='texto'>
+                <button>ok</button>
+            </form>"
             );}
 ?>

@@ -21,5 +21,6 @@
     <div id="mobile">
         <p>Este site nao suporta telas pequenas</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

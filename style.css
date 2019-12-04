@@ -81,3 +81,29 @@ aside button{
         display: flex;
     }
 }
+.update{
+    display: flex;
+}
+.update input{
+    border: none;
+    width: 70%;
+    height: 35px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    padding-left: 15px;
+}
+.update button{
+    color: white;
+    height: 35px;
+    padding: 5px 10px;
+    background-color: teal;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+.btneditar{
+    color: green;
+    margin-left: 10px;
+}
+.hide{
+    display: none;
+}
